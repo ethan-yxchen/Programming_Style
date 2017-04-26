@@ -1,5 +1,5 @@
 # Recursion that doesn't need so many stack frames
-by [Yi-Xian Chen(Ethan)](#); from the series [Six different styles to solve one programming problem](/ethan-yxchen/Programming_Style)
+by [Yi-Xian Chen(Ethan)](#); from the series [Six different styles to solve one programming problem](//github.com/ethan-yxchen/Programming_Style)
 
 __Concepts: depth of recursion, stack frame, higher order function, tail recursion__<br>
 __Language feature: closure, rest operator (javascript), argument unpacking (Python)__
