@@ -7,7 +7,7 @@ but not in the blacklist.
 
 | Style         |Original Constraints   |Revised Constraints    |Design Features            |Language |
 | :------------ | :-------------------- | :-------------------- | :------------------------ | :------ |
-|Stack-friendly Recursion|- Infinite mirror <br>- Solve the problem with recursion      |- Even the language does **not** support **tail recursion optimization**,<br> the usage of stack frames should be less than linear to input size |- **high order function** <br>- high order decomposition of the problem <br>- only need __⌈*log<sub>3</sub>(n)*⌉__ levels of stack frames |javascript|
+|[Stack-friendly Recursion](./StackFriendlyRecursion)|- Infinite mirror <br>- Solve the problem with recursion      |- Even the language does **not** support **tail recursion optimization**,<br> the usage of stack frames should be less than linear to input size |- **high order function** <br>- high order decomposition of the problem <br>- only need __⌈*log<sub>3</sub>(n)*⌉__ levels of stack frames |javascript|
 |From Scratch* |*A new style not derived from _Exercisein Programming Style_ |- No built-in **dynamic sequence containers** i.e. _vector<>_, _list_<br> - No built-in **associative container** i.e. _Map<>_, _dict_, or {} |- implement **linked list** as my dynamic cantainer<br>- implement **skip list** as my associativecontainer  |C|
 |Good Old Time     |- Small memory <br>- No "named variable", no "labeled" address|- Up to 1024 bytes data memory<br>- Efficiency; quadratic or slower is not allowed<br>- Modularity|- Implement an **insert-only B-tree**, so that we can meet memory and efficiency constraints<br>- Use C preprocessor to generate C source which meets the constraints|C|
 
