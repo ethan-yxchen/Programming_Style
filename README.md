@@ -8,7 +8,7 @@ but not in the blacklist.
 | Style         |Original Constraints   |Revised Constraints    |Design Features            |Language |
 | :------------ | :-------------------- | :-------------------- | :------------------------ | :------ |
 |Stack-friendly Recursion|- Infinite mirror <br>- Solve the problem with recursion      |- Even the language does **not** support **tail recursion optimization**,<br> the usage of stack frames should be less than linear to input size |- **high order function** <br>- high order decomposition of the problem <br>- only need __⌈*log<sub>3</sub>(n)*⌉__ levels of stack frames |javascript|
-
+|From Scratch* |*A new style not derived from _Exercisein Programming Style_ |- No built-in **dynamic sequence containers** i.e. _vector<>_, _list_<br> - No built-in **associativecontainer** i.e. _Map<>_, _dict_, or {} |- implement **linked   list** as my dynamic cantainer<br>- implement **skip list** as my associativecontainer  |C|
 
 I wrote these six programs, each solves the same problem in a different style.
 
