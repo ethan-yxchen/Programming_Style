@@ -5,37 +5,10 @@ of words (stopword), find the top-_N_ most frequent words in that text file
 but not in the blacklist.
 
 
-+--------------+-----------------------+---------------------------+---------------------------+---------+
-|Style         |Original Constraints   |Revised Constraints        |Design Features            |Language |
-+==============+=======================+===========================+===========================+=========+
-|Stack-friendly|- Infinite mirror      |- Even the language does   |- **high order function**  |javascript
-|Recursion     |- Solve the problem    |**not** support **tail     |- high order decomposition
-|              |with recursion         |recursion optimization**,  |of the problem
-|                                      |the usage of stack frames  |- only need
-|                                      |should be less than linear |**⌈ *log<sub>3</sub>(n)*⌉ **
-|                                      |to input  size             |levels of stack frames
-+--------------+-----------------------+---------------------------+---------------------------+---------+
-|From           *A new style not         - No built-in **dynamic     - implement **linked   
-|Scratch*       derived from _Exercises  sequence containers** i.e.  list** as my dynamic 
-|               in Programming Style_    _vector<>_, _list_          cantainer                 |C
-|                                        - No built-in **associative - implement **skip 
-|                                        container** i.e.            list** as my associative
-|                                        _Map<>_, _dict_, or {}      container  
-+--------------+-----------------------+---------------------------+---------------------------+---------+
-|Good Old      |- Small memory         |- Up to 1024 bytes         | - Implement an **insert-  |         |   
-|Time          |- No "named variable", |  data memory              | only B-tree**, so that    |C        |
-|               no "labeled" address    - Efficiency; quadratic or   we can meet memory and   
-|                                        slower is not allowed      efficiency constraints    
-|              |                       |- Modularity               | - Use C preprocessor to   |         |
-|              |                       |                           | generate C source which  
-|              |                       |                           | meets the constraints    
-+--------------+-----------------------+---------------------------+---------------------------+---------+
-|
-+--------------+-----------------------+---------------------------+---------------------------+---------+
-|
-+--------------+-----------------------+---------------------------+---------------------------+---------+
-|
-+--------------+-----------------------+---------------------------+---------------------------+---------+
+| Style         |Original Constraints   |Revised Constraints        |Design Features            |Language |
+| :------------ | :-------------------- | :-------------------------| :-------------------------| :-------|
+|Stack-friendly<br>Recursion|- Infinite mirror<br>- Solve the problem<br>with recursion      |- Even the language does   |- **high order function**  |javascript
+
 
 I wrote these six programs, each solves the same problem in a different style.
 
