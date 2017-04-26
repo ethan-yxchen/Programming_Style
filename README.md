@@ -7,8 +7,7 @@ but not in the blacklist.
 
 | Style         |Original Constraints   |Revised Constraints        |Design Features            |Language |
 | :------------ | :-------------------- | :-------------------------| :-------------------------| :-------|
-|Stack-friendly Recursion|- Infinite mirror <br>- Solve the problem with recursion      |- Even the language does **not** support **tail   |- **high order function**  |javascript
-
+|Stack-friendly Recursion|- Infinite mirror <br>- Solve the problem with recursion      |- Even the language does **not** support **tail recursion optimization**, the usage of stack frames should be less than linear to input size  |- **high order function**  |javascript
 
 
 I wrote these six programs, each solves the same problem in a different style.
