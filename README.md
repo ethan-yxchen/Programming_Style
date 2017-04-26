@@ -5,8 +5,8 @@ of words (stopword), find the top-_N_ most frequent words in that text file
 but not in the blacklist.
 
 
-| Style         |Original Constraints   |Revised Constraints        |Design Features            |Language |
-| :------------ | :-------------------- | :-------------------------| :-------------------------| :-------|
+| Style         |Original Constraints   |Revised Constraints    |Design Features            |Language |
+| :------------ | :-------------------- | :-------------------- | :------------------------ | :------ |
 |Stack-friendly Recursion|- Infinite mirror <br>- Solve the problem with recursion      |- Even the language does **not** support **tail recursion optimization**, the usage of stack frames should be less than linear to input size  |- **high order function** <br>- high order decomposition of the problem <br>- only need **⌈ *log<sub>3</sub>(n)*⌉ ** levels of stack frames |javascript|
 
 
