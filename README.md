@@ -7,7 +7,7 @@ but not in the blacklist.
 
 | Style         |Original Constraints   |Revised Constraints    |Design Features            |Language |
 | :------------ | :-------------------- | :-------------------- | :------------------------ | :------ |
-|Stack-friendly Recursion|- Infinite mirror <br>- Solve the problem with recursion      |- Even the language does **not** <br>support **tail recursion <br>optimization**, the usage of <br>stack frames should be less <br>than linear to input size  |- **high order function** <br>- high order decomposition of the problem <br>- only need **⌈ *log<sub>3</sub>(n)*⌉ ** levels of stack frames |javascript|
+|Stack-friendly Recursion|- Infinite mirror <br>- Solve the problem with recursion      |- Even the language does **not** <br>support **tail recursion <br>optimization**, the usage of <br>stack frames should be less <br>than linear to input size  |- **high order function** <br>- high order decomposition of the problem <br>- only need __⌈*log<sub>3</sub>(n)*⌉__ levels of stack frames |javascript|
 
 
 I wrote these six programs, each solves the same problem in a different style.
